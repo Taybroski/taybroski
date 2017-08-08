@@ -1,0 +1,49 @@
+/****************************************
+								FOOTER
+							ALL PAGES
+****************************************/
+footer a {
+	text-decoration: none;
+	color: #d0d0d0 !important;
+}
+footer {
+	max-width: 100%;
+	font-family: 'Roboto', sans-serif;
+	margin: 0 auto;
+	padding: 1% 0;
+	text-align: center;
+	background-color: #333;
+	border-top: 0.5em solid #181818;
+}
+.social-links {
+	width: 5%;
+	padding: 0 2%;
+	margin-bottom: 1%
+}
+footer ul li {
+	display: inline-block;
+	font-size: 1.3em;
+	/*padding: 0 2%;*/
+}
+footer ul li:nth-child(2) {
+	padding: 0 2%;
+}
+footer p {
+	padding-top: 5em;
+}
+
+
+@media (max-width: 660px) {
+
+	.social-links {
+		width: 12%;
+	}
+
+	footer ul li {
+		display: block;
+		padding: 4%;
+	}
+	footer p {
+		padding-top: 2%;
+	}
+}

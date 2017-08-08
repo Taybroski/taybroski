@@ -1,0 +1,47 @@
+/**************************************************
+!!!!!!!!!!!!!PAGE: CONTACT!!!!!!!!!!!!!!!!!!!!!!
+**************************************************/
+div.contact-content {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+/*Paragraph below header*/
+.contact-content p {
+	font-family: 'Roboto', sans-serif; 
+	font-size: 1.5em;
+	margin: 0 15%;
+	margin-bottom: 2%;
+	color: #136D9D;
+}
+
+/*list*/
+.contact-content ul {
+	margin: 2% auto;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.contact-content ul li {
+	font-size: 1.4em;
+	padding: 3px;
+}
+.contact-content ul li strong {
+	font-size: 1.5em;
+	margin-right: 1em;
+	color: #000;
+}
+.contact-content ul li .bold:hover {
+	text-decoration: none;
+}
+.contact-content ul.social-list {
+	margin: 1em auto;
+	font-size: 1.4em;
+}
+/*list social icons*/
+.contact-content ul img {
+	max-width: 15%;
+	padding: 6%;
+}
+.contact-content ul li a {
+	color: #d0d0d0;
+}

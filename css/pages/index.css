@@ -1,0 +1,239 @@
+
+/**************************************************
+!!!!!!!!!!!!!PAGE: INDEX!!!!!!!!!!!!!!!!!!!!!!
+**************************************************/
+/****************************************
+					HEADER - 100VH/VW
+****************************************/
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	background-color: #202020;
+}
+div.header-text-wrapper {
+	text-align: center;
+	color: #fff;
+}
+header h1.header-h1 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 8.5em;
+	font-weight: 300;
+	margin: 0.1em;
+	border-top: 2px #fff double;
+	border-bottom: 2px #fff solid;
+	text-transform: uppercase;
+	letter-spacing: 0.5%;
+}
+header p.header-p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.4em;
+	font-weight: 100;
+}
+
+
+
+/****************************************
+				PROFILE
+****************************************/
+section.profile {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-content: space-between;
+	box-sizing: border-box;
+	max-width: 100%;
+	padding: 15em 0;
+	margin: 0 10%;
+}
+section.profile figure {
+	/*max-width: 30%;*/
+	flex: 1;
+	margin-right: 5%;
+}
+section.profile figure img {
+	border-radius: 50%;
+	max-width: 25em;
+}
+section.profile figure img:active {
+	transform: scale(1.5);
+}
+section.profile div {
+	/*max-width: 70%;*/
+	flex: 3;
+}
+section.profile div h1.slogan {
+	font-size: 5em;
+	font-family: 'Lobster', cursive;
+	text-align: center;
+	color: #202020;
+}
+
+
+
+/****************************************
+				ARTICLE - DESCRIPTION
+****************************************/
+article.description a {
+	color: #d0d0d0;
+	font-weight: 300;
+}
+article.description {
+	display: flex;
+	justify-content: center;
+	max-width: 100%;
+	padding: 2%;
+	background-color: #202020;
+}
+.description-container {
+	max-width: 80%;
+}
+article.description .headline {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 3em;
+	color: #fff;
+	margin: 1% 0 3% 5%;
+}
+article.description .info {
+	font-family: 'Roboto', sans-serif;
+	color: #d0d0d0;
+	font-size: 1.5em;
+	font-weight: 100;
+	line-height: 1.4;
+	margin-bottom: 1%;
+}
+
+
+
+/****************************************
+						PAGES / LINKS
+****************************************/
+content#content {
+	display: flex;
+	flex-direction: row;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+content div.page-box {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-items: baseline;
+	flex: 1;
+	padding: 1em;
+	padding-top: 3em;
+}
+content div.br {
+	background-color: #B2E3FF;
+	border-right: 1em solid #202020;
+}
+content div.bl {
+	background-color: #FFF17E;
+	border-left: 1em solid #202020;
+	/*padding: 1.1em 2em 2.9em 2em*/;
+}
+content div img {
+	transition: 0.2s;
+	max-width: 50%;
+}
+content .page-box:hover img {
+	filter: blur(4px);
+	transition: filter 0.2s;
+}
+
+/*ABSOLUTE TEXT*/
+content div h1 {
+	display: block;
+	position: absolute;
+	font-family: 'Lobster', cursive;
+	font-size: 800%;
+	color: #202020;
+	margin-top: 12%;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+content .page-box:hover h1 {
+	opacity: 1;
+	transition: opacity 0.5s;
+}
+
+
+
+
+
+/****************************************
+				MEDIA QUERY
+****************************************/
+
+@media (max-width: 660px) {
+
+/****************************************
+				PROFILE
+****************************************/
+	section.profile {
+		display: flex;
+		flex-direction: column;
+		padding: 10em 0;
+		margin: 0 auto;
+	}
+	section.profile figure img {
+		/*max-width: 80%;*/
+		flex: 1;
+	}
+	section.profile figure {
+		margin: 0 auto;
+	}
+	section div h1 {
+		flex: 1;
+		margin: 0 auto;
+		padding-top: 1em;
+		max-width: 50%;
+	}
+	
+
+
+/****************************************
+						PAGES / LINKS
+****************************************/
+	content#content {
+		display: flex;
+		flex-direction: column;
+	}
+	content div.page-box {
+		filter: blur(0px);
+		max-width: 100%;
+	}
+	content div#br {
+		background-color: #B2E3FF;
+		border: none;
+		border-bottom: 0.5em solid #202020;
+	}
+	content div#bl {
+		background-color: #FFF17E;
+		border: none;
+		/*border-top: 0.5em solid #202020;*/
+	}
+	/*ABSOLUTE TEXT*/
+		content .page-box:hover h1 {
+		opacity: 1;
+		transition: opacity 0s;
+	}
+		content .page-box:hover img {
+		filter: blur(0px);
+	}
+	content div h1.page-text {
+		font-size: 650%;
+		opacity: 1;
+	}
+	content div h1.right-text {
+		color: #B2E3FF;
+		stroke: #000;
+		stroke-width: 2px;
+	}
+	content div h1.left-text {
+		color: #FFF17E;
+	}
+}

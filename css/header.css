@@ -1,0 +1,17 @@
+/****************************************
+						HEADER
+****************************************/
+header.header-container {
+	display: flex;
+	width: 100%;
+	padding: 1em;
+}
+header h1 {
+	width: 100%;
+	font-family: 'Lobster', cursive;
+	font-size: 500%;
+	margin: 2% 0 1% 15%;
+}
+header h1 a:hover {
+	text-decoration: none;
+}
