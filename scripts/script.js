@@ -1,6 +1,4 @@
 // // HEADER FADER
-// $(window).on("load", function() {
-
 $(document).ready(function() {
 	var headerText = $('.header-h1');
 	var headerP0 = $('.pSpan0');
@@ -30,12 +28,11 @@ $(document).ready(function() {
 			});
 		});
 	}, 1000);
-});
+
+
+
 
 // PROFILE SLOGAN TEXT CHANGER
-
-$(document).ready(function() {
-
 	var image = $(".profileImg");
 	var slogan = $(".slogan");
 
@@ -45,16 +42,33 @@ $(document).ready(function() {
 		image.mouseout(function() {
 			slogan.html("A bean with a dream...")
 		})
-});
+
+
+
 
 // PAGE RE-DIRECTION
-
 	var portfolioPage = document.getElementById("br");
 	var contactPage = document.getElementById("bl");
 
 	portfolioPage.onclick = function() {
-		window.location.assign("pages/portfolio.html");
+		window.location.assign("2017/pages/portfolio.html");
 	};
 	contactPage.onclick = function() {
-		window.location.assign("pages/contact.html");
+		window.location.assign("2017/pages/contact.html");
 	};
+
+
+
+// FOOTER SOCIAL ICON PAGE RE-DIRECTION
+
+	var facebook = document.getElementById("social-fb")
+	var twitter = document.getElementById("social-tw")
+
+	facebook.onclick = function() {
+		window.location.assign("https://www.facebook.com/taylor.lefustec");
+	};
+	twitter.onclick = function() {
+		window.location.assign("https://twitter.com/jsyTaybroski");
+	};
+
+});
