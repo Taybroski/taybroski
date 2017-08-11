@@ -12,13 +12,13 @@ div.description p {
 div.list-container {
 	display: flex;	flex-direction: row;
 	justify-content: center;
+	align-items: stretch;
 	align-items: baseline;
 	max-width: 100%;
 }
 div ul.ul-main {
 	flex: 1;
 	flex-direction: column;
-
 }
 div ul li {
 	/*margin: 1em;*/
@@ -31,12 +31,13 @@ div ul li img {
 	display: block;
 	width: 50%;
 	border-radius: 2px;
-	margin: 0 auto;
+	margin: 1.5em auto;
 }
 div ul li h3 {
 	font-size: 250%;
 	text-align: center;
 	margin-top: 2%;
+	color: #136D9D;
 }
 div ul li p {
 	margin: 1em 3em;
