@@ -23,15 +23,20 @@ div ul.ul-main {
 div ul li {
 	/*margin: 1em;*/
 	padding: 1em;
+	min-height: 46em;
 }
 div ul li a {
 
 }
 div ul li img {
 	display: block;
-	width: 50%;
+	min-width: 225px;
+	max-width: 225px;
+	min-height: 180px;
+	max-height: 180px;
 	border-radius: 2px;
 	margin: 1.5em auto;
+	opacity: 0.7;
 }
 div ul li h3 {
 	font-size: 250%;
